@@ -4,161 +4,387 @@
       "id": "1",
       "name": "Stranger Things",
       "image": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
-      "genre": ["Drama", "Ficção científica", "Terror"],
+      "genre": ["Drama", "Ficção científica", "Terror", "Mistério", "Aventura"],
       "year": 2016,
-      "rating": 4.8
+      "rating": 4.8,
+      "synopsis": "Em 1983, na cidade de Hawkins, Indiana, um garoto desaparece misteriosamente. Enquanto a polícia, a família e os amigos procuram por respostas, eles são envolvidos em uma extraordinária série de eventos envolvendo forças sobrenaturais, experimentos secretos do governo e uma estranha garotinha.",
+      "cast": [
+        "Winona Ryder",
+        "David Harbour",
+        "Finn Wolfhard",
+        "Millie Bobby Brown",
+        "Gaten Matarazzo",
+        "Caleb McLaughlin",
+        "Noah Schnapp",
+        "Sadie Sink"
+      ]
     },
     {
       "id": "2",
       "name": "Breaking Bad",
       "image": "https://image.tmdb.org/t/p/w500/3xnWaLQLE3t3NuBv7kFfYhT0I9l.jpg",
-      "genre": ["Drama", "Crime", "Thriller"],
+      "genre": ["Drama", "Crime", "Thriller", "Suspense", "Ação"],
       "year": 2008,
-      "rating": 4.9
+      "rating": 4.9,
+      "synopsis": "Um professor de química do ensino médio, Walter White, descobre que tem câncer terminal. Para garantir o futuro financeiro de sua família, ele começa a fabricar e vender metanfetamina com um ex-aluno, Jesse Pinkman.",
+      "cast": [
+        "Bryan Cranston",
+        "Aaron Paul",
+        "Anna Gunn",
+        "Dean Norris",
+        "Betsy Brandt",
+        "RJ Mitte",
+        "Bob Odenkirk",
+        "Giancarlo Esposito"
+      ]
     },
     {
       "id": "3",
       "name": "The Last of Us",
       "image": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
-      "genre": ["Drama", "Ação", "Terror"],
+      "genre": ["Drama", "Ação", "Terror", "Sobrevivência", "Aventura"],
       "year": 2023,
-      "rating": 4.7
+      "rating": 4.7,
+      "synopsis": "Vinte anos após a devastação da sociedade, Joel, um sobrevivente duro, é contratado para contrabandear Ellie, uma garota de 14 anos, para fora de uma zona de quarentena opressiva. O que começa como um pequeno trabalho logo se torna uma jornada brutal e emocional.",
+      "cast": [
+        "Pedro Pascal",
+        "Bella Ramsey",
+        "Gabriel Luna",
+        "Anna Torv",
+        "Nico Parker",
+        "Murray Bartlett",
+        "Nick Offerman",
+        "Melanie Lynskey"
+      ]
     },
     {
       "id": "4",
       "name": "Game of Thrones",
       "image": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
-      "genre": ["Drama", "Fantasia", "Aventura"],
+      "genre": ["Drama", "Fantasia", "Aventura", "Ação", "Romance"],
       "year": 2011,
-      "rating": 4.6
+      "rating": 4.6,
+      "synopsis": "Em um mundo onde o verão pode durar décadas e o inverno uma vida inteira, nove famílias nobres lutam pelo controle das terras de Westeros, enquanto uma antiga força retorna após milênios de esquecimento.",
+      "cast": [
+        "Emilia Clarke",
+        "Kit Harington",
+        "Peter Dinklage",
+        "Lena Headey",
+        "Sean Bean",
+        "Sophie Turner",
+        "Maisie Williams",
+        "Nikolaj Coster-Waldau"
+      ]
     },
     {
       "id": "5",
       "name": "The Office",
       "image": "https://image.tmdb.org/t/p/w500/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg",
-      "genre": ["Comédia", "Romance"],
+      "genre": ["Comédia", "Romance", "Sitcom", "Documentário"],
       "year": 2005,
-      "rating": 4.5
+      "rating": 4.5,
+      "synopsis": "Uma equipe de documentário filma os funcionários da Dunder Mifflin, uma empresa de papel em Scranton, Pensilvânia. O gerente regional Michael Scott tenta manter seus funcionários motivados enquanto lida com suas próprias inseguranças.",
+      "cast": [
+        "Steve Carell",
+        "Rainn Wilson",
+        "John Krasinski",
+        "Jenna Fischer",
+        "B. J. Novak",
+        "Mindy Kaling",
+        "Ed Helms",
+        "Angela Kinsey"
+      ]
     },
     {
       "id": "6",
       "name": "The Mandalorian",
       "image": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1RzqUWYTw.jpg",
-      "genre": ["Ação", "Aventura", "Ficção científica"],
+      "genre": ["Ação", "Aventura", "Ficção científica", "Drama", "Fantasia"],
       "year": 2019,
-      "rating": 4.7
+      "rating": 4.7,
+      "synopsis": "Após a queda do Império, um solitário caçador de recompensas das bordas da galáxia aceita um trabalho que o coloca no caminho de uma criança misteriosa que pode ser a chave para restaurar a ordem na galáxia.",
+      "cast": [
+        "Pedro Pascal",
+        "Gina Carano",
+        "Carl Weathers",
+        "Werner Herzog",
+        "Nick Nolte",
+        "Taika Waititi",
+        "Katee Sackhoff",
+        "Rosario Dawson"
+      ]
     },
     {
       "id": "7",
       "name": "Black Mirror",
       "image": "https://image.tmdb.org/t/p/w500/7PRddOAI1ENoo6T7ZbN5hB0T6Yb.jpg",
-      "genre": ["Drama", "Ficção científica", "Thriller"],
+      "genre": ["Drama", "Ficção científica", "Thriller", "Mistério", "Terror"],
       "year": 2011,
-      "rating": 4.4
+      "rating": 4.4,
+      "synopsis": "Uma série antológica que explora um futuro próximo onde a obsessão da sociedade por tecnologia tem consequências sombrias e inesperadas.",
+      "cast": [
+        "Jesse Plemons",
+        "Cristin Milioti",
+        "Jimmi Simpson",
+        "Michaela Coel",
+        "Daniel Lapaine",
+        "Hannah John-Kamen",
+        "Aaron Paul",
+        "Bryce Dallas Howard"
+      ]
     },
     {
       "id": "8",
       "name": "The Crown",
       "image": "https://image.tmdb.org/t/p/w500/1XDDXPXGiI8g7un8z2VfP4g3Otp.jpg",
-      "genre": ["Drama", "História"],
+      "genre": ["Drama", "História", "Biografia", "Romance"],
       "year": 2016,
-      "rating": 4.3
+      "rating": 4.3,
+      "synopsis": "A história da Rainha Elizabeth II e da família real britânica, desde a Segunda Guerra Mundial até os dias modernos, mostrando os eventos que moldaram o século XX.",
+      "cast": [
+        "Claire Foy",
+        "Olivia Colman",
+        "Imelda Staunton",
+        "Matt Smith",
+        "Tobias Menzies",
+        "Jonathan Pryce",
+        "Helena Bonham Carter",
+        "Vanessa Kirby"
+      ]
     },
     {
       "id": "9",
       "name": "Better Call Saul",
       "image": "https://image.tmdb.org/t/p/w500/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg",
-      "genre": ["Drama", "Crime", "Thriller"],
+      "genre": ["Drama", "Crime", "Thriller", "Suspense", "Comédia"],
       "year": 2015,
-      "rating": 4.6
+      "rating": 4.6,
+      "synopsis": "A história de Jimmy McGill, um advogado que se transforma no infame Saul Goodman, seis anos antes dos eventos de Breaking Bad.",
+      "cast": [
+        "Bob Odenkirk",
+        "Jonathan Banks",
+        "Rhea Seehorn",
+        "Patrick Fabian",
+        "Michael Mando",
+        "Tony Dalton",
+        "Giancarlo Esposito",
+        "Mark Margolis"
+      ]
     },
     {
       "id": "10",
       "name": "The Witcher",
       "image": "https://image.tmdb.org/t/p/w500/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
-      "genre": ["Ação", "Aventura", "Drama"],
+      "genre": ["Ação", "Aventura", "Drama", "Fantasia", "Romance"],
       "year": 2019,
-      "rating": 4.2
+      "rating": 4.2,
+      "synopsis": "Geralt de Rivia, um solitário caçador de monstros, luta para encontrar seu lugar em um mundo onde as pessoas frequentemente se mostram mais perversas que as bestas.",
+      "cast": [
+        "Henry Cavill",
+        "Anya Chalotra",
+        "Freya Allan",
+        "Joey Batey",
+        "MyAnna Buring",
+        "Royce Pierreson",
+        "Eamon Farren",
+        "Mimi Ndiweni"
+      ]
     },
     {
       "id": "11",
       "name": "House of the Dragon",
       "image": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
-      "genre": ["Drama", "Fantasia", "Ação"],
+      "genre": ["Drama", "Fantasia", "Ação", "Aventura", "Romance"],
       "year": 2022,
-      "rating": 4.5
+      "rating": 4.5,
+      "synopsis": "200 anos antes dos eventos de Game of Thrones, a história da Casa Targaryen e a guerra civil conhecida como 'A Dança dos Dragões'.",
+      "cast": [
+        "Paddy Considine",
+        "Matt Smith",
+        "Emma D'Arcy",
+        "Olivia Cooke",
+        "Rhys Ifans",
+        "Steve Toussaint",
+        "Eve Best",
+        "Sonoya Mizuno"
+      ]
     },
     {
       "id": "12",
       "name": "Wednesday",
       "image": "https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
-      "genre": ["Comédia", "Crime", "Fantasia"],
+      "genre": ["Comédia", "Crime", "Fantasia", "Terror", "Mistério"],
       "year": 2022,
-      "rating": 4.3
+      "rating": 4.3,
+      "synopsis": "Wednesday Addams é enviada para a Academia Nevermore, onde tenta dominar suas habilidades psíquicas emergentes, impedir uma onda de assassinatos e resolver o mistério que envolveu seus pais há 25 anos.",
+      "cast": [
+        "Jenna Ortega",
+        "Gwendoline Christie",
+        "Riki Lindhome",
+        "Jamie McShane",
+        "Hunter Doohan",
+        "Percy Hynes White",
+        "Emma Myers",
+        "Joy Sunday"
+      ]
     },
     {
       "id": "13",
       "name": "The Boys",
       "image": "https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg",
-      "genre": ["Ação", "Comédia", "Crime"],
+      "genre": ["Ação", "Comédia", "Crime", "Drama", "Suspense"],
       "year": 2019,
-      "rating": 4.4
+      "rating": 4.4,
+      "synopsis": "Em um mundo onde super-heróis abusam de seus poderes em vez de usá-los para o bem, um grupo de vigilantes se une para derrubar super-heróis corruptos.",
+      "cast": [
+        "Karl Urban",
+        "Jack Quaid",
+        "Antony Starr",
+        "Erin Moriarty",
+        "Dominique McElligott",
+        "Jessie T. Usher",
+        "Laz Alonso",
+        "Chace Crawford"
+      ]
     },
     {
       "id": "14",
       "name": "Succession",
       "image": "https://image.tmdb.org/t/p/w500/7HW6v8QUxU3BH3jxI1Zqe2hWvuP.jpg",
-      "genre": ["Drama"],
+      "genre": ["Drama", "Comédia", "Suspense", "Família"],
       "year": 2018,
-      "rating": 4.6
+      "rating": 4.6,
+      "synopsis": "A história da família Roy, proprietários de um império global de mídia, que luta pelo controle da empresa enquanto o patriarca envelhece.",
+      "cast": [
+        "Brian Cox",
+        "Jeremy Strong",
+        "Kieran Culkin",
+        "Sarah Snook",
+        "Matthew Macfadyen",
+        "Nicholas Braun",
+        "Alan Ruck",
+        "J. Smith-Cameron"
+      ]
     },
     {
       "id": "15",
       "name": "True Detective",
       "image": "https://image.tmdb.org/t/p/w500/b8Ht0Kz2gzNbXwqR6nZGQHtk3Hw.jpg",
-      "genre": ["Crime", "Drama", "Mistério"],
+      "genre": ["Crime", "Drama", "Mistério", "Thriller", "Suspense"],
       "year": 2014,
-      "rating": 4.5
+      "rating": 4.5,
+      "synopsis": "Uma série antológica que segue diferentes detetives e seus casos complexos, explorando as profundezas da natureza humana e as consequências do mal.",
+      "cast": [
+        "Matthew McConaughey",
+        "Woody Harrelson",
+        "Michelle Monaghan",
+        "Michael Potts",
+        "Tory Kittles",
+        "Alexandra Daddario",
+        "John Neff",
+        "Kevin Dunn"
+      ]
     },
     {
       "id": "16",
       "name": "Fargo",
       "image": "https://image.tmdb.org/t/p/w500/dFVeKDVJu8Rq9MqCqX9uI3CTvkz.jpg",
-      "genre": ["Crime", "Drama", "Thriller"],
+      "genre": ["Crime", "Drama", "Thriller", "Mistério", "Comédia"],
       "year": 2014,
-      "rating": 4.4
+      "rating": 4.4,
+      "synopsis": "Uma série antológica que se passa no universo do filme Fargo, onde cada temporada apresenta uma nova história de crime e consequências morais no meio-oeste americano.",
+      "cast": [
+        "Martin Freeman",
+        "Billy Bob Thornton",
+        "Allison Tolman",
+        "Colin Hanks",
+        "Bob Odenkirk",
+        "Keith Carradine",
+        "Glenn Howerton",
+        "Adam Goldberg"
+      ]
     },
     {
       "id": "17",
       "name": "The Handmaid's Tale",
       "image": "https://image.tmdb.org/t/p/w500/9WfcGEHhpWQZZJpqyY08ZUDhRkZ.jpg",
-      "genre": ["Drama", "Ficção científica"],
+      "genre": [
+        "Drama",
+        "Ficção científica",
+        "Thriller",
+        "Distopia",
+        "Suspense"
+      ],
       "year": 2017,
-      "rating": 4.3
+      "rating": 4.3,
+      "synopsis": "Em um futuro distópico, uma teocracia totalitária subjuga as mulheres e as força a viver como servas reprodutoras em uma sociedade devastada pela infertilidade.",
+      "cast": [
+        "Elisabeth Moss",
+        "Joseph Fiennes",
+        "Yvonne Strahovski",
+        "Alexis Bledel",
+        "Madeline Brewer",
+        "Ann Dowd",
+        "O. T. Fagbenle",
+        "Max Minghella"
+      ]
     },
     {
       "id": "18",
       "name": "Peaky Blinders",
       "image": "https://image.tmdb.org/t/p/w500/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg",
-      "genre": ["Crime", "Drama"],
+      "genre": ["Crime", "Drama", "História", "Ação", "Suspense"],
       "year": 2013,
-      "rating": 4.5
+      "rating": 4.5,
+      "synopsis": "Uma família criminosa britânica, os Shelby, expande seu império após a Primeira Guerra Mundial, enfrentando rivais e autoridades corruptas em Birmingham.",
+      "cast": [
+        "Cillian Murphy",
+        "Helen McCrory",
+        "Paul Anderson",
+        "Sophie Rundle",
+        "Joe Cole",
+        "Finn Cole",
+        "Harry Kirton",
+        "Kate Phillips"
+      ]
     },
     {
       "id": "19",
       "name": "The Umbrella Academy",
       "image": "https://image.tmdb.org/t/p/w500/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
-      "genre": ["Ação", "Aventura", "Comédia"],
+      "genre": ["Ação", "Aventura", "Comédia", "Drama", "Fantasia"],
       "year": 2019,
-      "rating": 4.2
+      "rating": 4.2,
+      "synopsis": "Uma família disfuncional de super-heróis se reúne para resolver o mistério da morte de seu pai, o excêntrico bilionário Sir Reginald Hargreeves.",
+      "cast": [
+        "Ellen Page",
+        "Tom Hopper",
+        "David Castañeda",
+        "Emmy Raver-Lampman",
+        "Robert Sheehan",
+        "Aidan Gallagher",
+        "Cameron Britton",
+        "Mary J. Blige"
+      ]
     },
     {
       "id": "20",
       "name": "Money Heist",
       "image": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-      "genre": ["Ação", "Crime", "Drama"],
+      "genre": ["Ação", "Crime", "Drama", "Thriller", "Suspense"],
       "year": 2017,
-      "rating": 4.4
+      "rating": 4.4,
+      "synopsis": "Oito ladrões fazem reféns e se trancam na Casa da Moeda da Espanha com a ambiciosa meta de realizar o maior roubo da história.",
+      "cast": [
+        "Úrsula Corberó",
+        "Álvaro Morte",
+        "Itziar Ituño",
+        "Pedro Alonso",
+        "Paco Tous",
+        "Alba Flores",
+        "Miguel Herrán",
+        "Jaime Lorente"
+      ]
     }
   ]
 }
