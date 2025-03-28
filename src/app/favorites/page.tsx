@@ -14,11 +14,14 @@ import {
   Alert,
   IconButton,
   Tooltip,
+  Chip,
 } from "@mui/material";
-import { Favorite } from "@mui/icons-material";
+import { Favorite, ArrowBack } from "@mui/icons-material";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function FavoritesPage() {
+  const router = useRouter();
   const { titles, debugFavorites, getFavorites, removeFromFavorites } =
     useTitleContext();
   const [isMounted, setIsMounted] = useState(false);
@@ -66,6 +69,10 @@ export default function FavoritesPage() {
     setFavoriteIds((prev) => prev.filter((favId) => favId !== id));
   };
 
+  const handleGoBack = () => {
+    router.push("/");
+  };
+
   // Exibir um estado de carregamento até que o componente seja montado
   if (isLoading) {
     return (
@@ -87,7 +94,7 @@ export default function FavoritesPage() {
         <Alert severity="error" sx={{ mb: 2 }}>
           {error}
         </Alert>
-        <Button variant="contained" color="primary" component={Link} href="/">
+        <Button variant="contained" color="primary" onClick={handleGoBack}>
           Voltar para o Catálogo
         </Button>
       </Container>
@@ -96,16 +103,48 @@ export default function FavoritesPage() {
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Meus Favoritos
-      </Typography>
+      <Box
+        sx={{
+          mb: 3,
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Typography variant="h4" component="h1">
+          Meus Favoritos
+        </Typography>
+        <Button
+          variant="outlined"
+          startIcon={<ArrowBack />}
+          onClick={handleGoBack}
+        >
+          Voltar para o Catálogo
+        </Button>
+      </Box>
+
+      {/* Exibe os IDs dos favoritos para diagnóstico */}
+      <Box sx={{ mb: 2 }}>
+        <Typography variant="subtitle2" gutterBottom>
+          IDs favoritos:
+        </Typography>
+        {favoriteIds.length > 0 ? (
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+            {favoriteIds.map((id) => (
+              <Chip key={id} label={id} size="small" />
+            ))}
+          </Box>
+        ) : (
+          <Typography variant="body2">Nenhum ID favorito encontrado</Typography>
+        )}
+      </Box>
 
       {favoriteTitles.length === 0 ? (
         <Box sx={{ mt: 4 }}>
           <Typography variant="body1" sx={{ mb: 2 }}>
             Você ainda não adicionou nenhum título aos favoritos.
           </Typography>
-          <Button variant="contained" color="primary" component={Link} href="/">
+          <Button variant="contained" color="primary" onClick={handleGoBack}>
             Explorar Catálogo
           </Button>
         </Box>

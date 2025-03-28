@@ -1,6 +1,6 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useTitleContext } from "@/contexts/TitleContext";
 import {
   Container,
@@ -14,8 +14,9 @@ import {
   Divider,
   Avatar,
   Paper,
+  Button,
 } from "@mui/material";
-import { Person } from "@mui/icons-material";
+import { Person, ArrowBack } from "@mui/icons-material";
 
 interface Title {
   id: string;
@@ -30,20 +31,45 @@ interface Title {
 
 export default function TitleDetails() {
   const { id } = useParams();
+  const router = useRouter();
   const { titles } = useTitleContext();
 
   const title = titles.find((t) => t.id === id) as Title | undefined;
+
+  const handleGoBack = () => {
+    router.back();
+  };
 
   if (!title) {
     return (
       <Container>
         <Typography variant="h4">Título não encontrado</Typography>
+        <Box mt={2}>
+          <Button
+            variant="contained"
+            startIcon={<ArrowBack />}
+            onClick={handleGoBack}
+          >
+            Voltar
+          </Button>
+        </Box>
       </Container>
     );
   }
 
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
+      <Box sx={{ mb: 3 }}>
+        <Button
+          variant="outlined"
+          startIcon={<ArrowBack />}
+          onClick={handleGoBack}
+          sx={{ mb: 2 }}
+        >
+          Voltar
+        </Button>
+      </Box>
+
       <Grid container spacing={4}>
         <Grid item xs={12} md={4}>
           <Card>
