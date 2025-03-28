@@ -2,12 +2,25 @@
 
 import React, { useState, useEffect } from "react";
 import { useTitleContext } from "@/contexts/TitleContext";
-import TitleCard from "../../components/TitleCard";
-import { Button, Typography, Box, Container, Alert, Chip } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Box,
+  Button,
+  Alert,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
+import { Favorite } from "@mui/icons-material";
 import Link from "next/link";
 
 export default function FavoritesPage() {
-  const { titles, debugFavorites, getFavorites } = useTitleContext();
+  const { titles, debugFavorites, getFavorites, removeFromFavorites } =
+    useTitleContext();
   const [isMounted, setIsMounted] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
@@ -47,6 +60,12 @@ export default function FavoritesPage() {
   console.log("IDs favoritos na página:", favoriteIds);
   console.log("Títulos favoritos encontrados:", favoriteTitles);
 
+  // Manipulador para remover dos favoritos
+  const handleRemoveFavorite = (id: string) => {
+    removeFromFavorites(id);
+    setFavoriteIds((prev) => prev.filter((favId) => favId !== id));
+  };
+
   // Exibir um estado de carregamento até que o componente seja montado
   if (isLoading) {
     return (
@@ -81,22 +100,6 @@ export default function FavoritesPage() {
         Meus Favoritos
       </Typography>
 
-      {/* Exibe os IDs dos favoritos para diagnóstico */}
-      <Box sx={{ mb: 2 }}>
-        <Typography variant="subtitle2" gutterBottom>
-          IDs favoritos:
-        </Typography>
-        {favoriteIds.length > 0 ? (
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-            {favoriteIds.map((id) => (
-              <Chip key={id} label={id} size="small" />
-            ))}
-          </Box>
-        ) : (
-          <Typography variant="body2">Nenhum ID favorito encontrado</Typography>
-        )}
-      </Box>
-
       {favoriteTitles.length === 0 ? (
         <Box sx={{ mt: 4 }}>
           <Typography variant="body1" sx={{ mb: 2 }}>
@@ -107,16 +110,66 @@ export default function FavoritesPage() {
           </Button>
         </Box>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-4">
+        <Grid container spacing={3}>
           {favoriteTitles.map((title) => (
-            <Box key={title.id} sx={{ mb: 2 }}>
-              <Typography variant="subtitle2" align="center" gutterBottom>
-                ID: {title.id}
-              </Typography>
-              <TitleCard title={title} />
-            </Box>
+            <Grid item xs={12} sm={6} md={4} lg={3} key={title.id}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  transition: "transform 0.2s",
+                  "&:hover": {
+                    transform: "scale(1.02)",
+                  },
+                }}
+              >
+                <Box sx={{ p: 1, textAlign: "center" }}>
+                  <Typography variant="caption">ID: {title.id}</Typography>
+                </Box>
+                <Link
+                  href={`/title/${title.id}`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <CardMedia
+                    component="img"
+                    height="300"
+                    image={title.image}
+                    alt={title.name}
+                    sx={{ objectFit: "cover" }}
+                  />
+                </Link>
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Typography gutterBottom variant="h6" component="h2">
+                      {title.name}
+                    </Typography>
+                    <Tooltip title="Remover dos favoritos">
+                      <IconButton
+                        onClick={() => handleRemoveFavorite(title.id)}
+                        color="secondary"
+                      >
+                        <Favorite />
+                      </IconButton>
+                    </Tooltip>
+                  </Box>
+                  <Typography variant="body2" color="text.secondary">
+                    {title.genre.join(", ")}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {title.year} • {title.rating}/5
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           ))}
-        </div>
+        </Grid>
       )}
     </Container>
   );

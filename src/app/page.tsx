@@ -121,17 +121,6 @@ export default function Home() {
           onChange={(e) => setSearchQuery(e.target.value)}
           sx={{ mb: 2 }}
         />
-        <Button
-          variant="outlined"
-          size="small"
-          onClick={() => {
-            debugFavorites();
-            alert("Favoritos diagnosticados! Veja o console para detalhes.");
-          }}
-          sx={{ mb: 2 }}
-        >
-          Diagnosticar Favoritos
-        </Button>
       </Box>
 
       <Grid container spacing={3}>
