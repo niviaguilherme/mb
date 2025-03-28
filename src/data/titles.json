@@ -22,7 +22,7 @@
     {
       "id": "2",
       "name": "Breaking Bad",
-      "image": "https://image.tmdb.org/t/p/w500/3xnWaLQLE3t3NuBv7kFfYhT0I9l.jpg",
+      "image": "https://www.afpp.eu/wp-content/uploads/2020/04/screenshot_2023_08_30_at_16_21_31_ems_3jpg_webp_image_1400_2100_pixels_scaled_35.webp",
       "genre": ["Drama", "Crime", "Thriller", "Suspense", "Ação"],
       "year": 2008,
       "rating": 4.9,
@@ -98,7 +98,7 @@
     {
       "id": "6",
       "name": "The Mandalorian",
-      "image": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1RzqUWYTw.jpg",
+      "image": "https://m.media-amazon.com/images/I/81oP0pVLi5L._AC_UF1000,1000_QL80_.jpg",
       "genre": ["Ação", "Aventura", "Ficção científica", "Drama", "Fantasia"],
       "year": 2019,
       "rating": 4.7,
@@ -117,7 +117,7 @@
     {
       "id": "7",
       "name": "Black Mirror",
-      "image": "https://image.tmdb.org/t/p/w500/7PRddOAI1ENoo6T7ZbN5hB0T6Yb.jpg",
+      "image": "https://cinema10.com.br/upload/series/series_212_pblsck.jpg",
       "genre": ["Drama", "Ficção científica", "Thriller", "Mistério", "Terror"],
       "year": 2011,
       "rating": 4.4,
@@ -136,7 +136,7 @@
     {
       "id": "8",
       "name": "The Crown",
-      "image": "https://image.tmdb.org/t/p/w500/1XDDXPXGiI8g7un8z2VfP4g3Otp.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/pt/thumb/e/e2/The-Crown-Poster-S2.jpg/250px-The-Crown-Poster-S2.jpg",
       "genre": ["Drama", "História", "Biografia", "Romance"],
       "year": 2016,
       "rating": 4.3,
@@ -247,67 +247,11 @@
         "Chace Crawford"
       ]
     },
+
     {
       "id": "14",
-      "name": "Succession",
-      "image": "https://image.tmdb.org/t/p/w500/7HW6v8QUxU3BH3jxI1Zqe2hWvuP.jpg",
-      "genre": ["Drama", "Comédia", "Suspense", "Família"],
-      "year": 2018,
-      "rating": 4.6,
-      "synopsis": "A história da família Roy, proprietários de um império global de mídia, que luta pelo controle da empresa enquanto o patriarca envelhece.",
-      "cast": [
-        "Brian Cox",
-        "Jeremy Strong",
-        "Kieran Culkin",
-        "Sarah Snook",
-        "Matthew Macfadyen",
-        "Nicholas Braun",
-        "Alan Ruck",
-        "J. Smith-Cameron"
-      ]
-    },
-    {
-      "id": "15",
-      "name": "True Detective",
-      "image": "https://image.tmdb.org/t/p/w500/b8Ht0Kz2gzNbXwqR6nZGQHtk3Hw.jpg",
-      "genre": ["Crime", "Drama", "Mistério", "Thriller", "Suspense"],
-      "year": 2014,
-      "rating": 4.5,
-      "synopsis": "Uma série antológica que segue diferentes detetives e seus casos complexos, explorando as profundezas da natureza humana e as consequências do mal.",
-      "cast": [
-        "Matthew McConaughey",
-        "Woody Harrelson",
-        "Michelle Monaghan",
-        "Michael Potts",
-        "Tory Kittles",
-        "Alexandra Daddario",
-        "John Neff",
-        "Kevin Dunn"
-      ]
-    },
-    {
-      "id": "16",
-      "name": "Fargo",
-      "image": "https://image.tmdb.org/t/p/w500/dFVeKDVJu8Rq9MqCqX9uI3CTvkz.jpg",
-      "genre": ["Crime", "Drama", "Thriller", "Mistério", "Comédia"],
-      "year": 2014,
-      "rating": 4.4,
-      "synopsis": "Uma série antológica que se passa no universo do filme Fargo, onde cada temporada apresenta uma nova história de crime e consequências morais no meio-oeste americano.",
-      "cast": [
-        "Martin Freeman",
-        "Billy Bob Thornton",
-        "Allison Tolman",
-        "Colin Hanks",
-        "Bob Odenkirk",
-        "Keith Carradine",
-        "Glenn Howerton",
-        "Adam Goldberg"
-      ]
-    },
-    {
-      "id": "17",
       "name": "The Handmaid's Tale",
-      "image": "https://image.tmdb.org/t/p/w500/9WfcGEHhpWQZZJpqyY08ZUDhRkZ.jpg",
+      "image": "https://m.media-amazon.com/images/I/51D0z11Fl0L._SL500_.jpg",
       "genre": [
         "Drama",
         "Ficção científica",
@@ -330,7 +274,7 @@
       ]
     },
     {
-      "id": "18",
+      "id": "15",
       "name": "Peaky Blinders",
       "image": "https://image.tmdb.org/t/p/w500/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg",
       "genre": ["Crime", "Drama", "História", "Ação", "Suspense"],
@@ -349,7 +293,7 @@
       ]
     },
     {
-      "id": "19",
+      "id": "16",
       "name": "The Umbrella Academy",
       "image": "https://image.tmdb.org/t/p/w500/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
       "genre": ["Ação", "Aventura", "Comédia", "Drama", "Fantasia"],
@@ -368,7 +312,7 @@
       ]
     },
     {
-      "id": "20",
+      "id": "17",
       "name": "Money Heist",
       "image": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
       "genre": ["Ação", "Crime", "Drama", "Thriller", "Suspense"],
