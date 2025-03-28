@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Catálogo de Streaming
 
-## Getting Started
+Um aplicativo web moderno para descobrir e gerenciar seus filmes e séries favoritos.
 
-First, run the development server:
+![Screenshot do Catálogo de Streaming](https://i.imgur.com/8S5uGJw.jpg)
+
+## ✨ Funcionalidades
+
+- **Navegação intuitiva** por uma ampla coleção de filmes e séries
+- **Sistema de favoritos** para salvar e gerenciar títulos de interesse
+- **Busca avançada** com sugestões em tempo real
+- **Visualização detalhada** de cada título com informações sobre sinopse, elenco e avaliações
+- **Design responsivo** para uma experiência consistente em dispositivos móveis e desktop
+- **Tema escuro** para maior conforto visual
+
+## 🚀 Tecnologias Utilizadas
+
+- **[Next.js 14](https://nextjs.org/)** - Framework React com renderização do lado do servidor
+- **[React 18](https://react.dev/)** - Biblioteca para construção de interfaces
+- **[Material UI 5](https://mui.com/)** - Sistema de design robusto e componentes pré-estilizados
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset tipado de JavaScript
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário
+
+## 🛠️ Como Executar Localmente
+
+Certifique-se de ter [Node.js](https://nodejs.org/) (versão 18 ou superior) instalado.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/seu-usuario/streaming-catalog.git
+   cd streaming-catalog
+   ```
+
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+
+3. Execute o servidor de desenvolvimento:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abra [http://localhost:3000](http://localhost:3000) em seu navegador para visualizar o aplicativo.
+
+## 📦 Build e Deploy
+
+Para gerar uma versão de produção:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para executar a versão de produção localmente:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🌐 Deploy na Vercel
 
-## Learn More
+Este projeto está configurado para deploy na [Vercel](https://vercel.com/), uma plataforma especializada em hospedagem de aplicações Next.js.
 
-To learn more about Next.js, take a look at the following resources:
+1. Crie uma conta na Vercel e conecte com seu repositório GitHub
+2. Importe o projeto e a Vercel automaticamente detectará as configurações do Next.js
+3. Configure variáveis de ambiente, se necessário
+4. Aproveite recursos como preview de pull requests e implantação automática
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Estrutura do Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+streaming-catalog/
+├── public/            # Arquivos estáticos
+├── src/
+│   ├── app/           # Rotas e páginas da aplicação
+│   ├── components/    # Componentes reutilizáveis
+│   ├── contexts/      # Contextos React (incluindo TitleContext)
+│   ├── data/          # Dados estáticos (JSON de títulos)
+│   └── types/         # Definições de tipos TypeScript
+├── next.config.mjs    # Configuração do Next.js
+└── package.json       # Dependências e scripts
+```
 
-## Deploy on Vercel
+## 🧪 Testes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Execute testes com Jest:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm test
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👥 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests com melhorias.
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+---
+
+Desenvolvido com ❤️ por [Seu Nome](https://github.com/seu-usuario)
