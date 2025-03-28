@@ -5,7 +5,6 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Button,
   Box,
   IconButton,
   Tooltip,
@@ -30,7 +29,7 @@ export default function Navigation() {
             color: "inherit",
           }}
         >
-          Catálogo de Streaming1
+          Catálogo de Streaming
         </Typography>
         <Box>
           <Tooltip title="Favoritos">
