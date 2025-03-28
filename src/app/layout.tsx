@@ -1,7 +1,6 @@
 "use client";
 
 import { Inter } from "next/font/google";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { TitleProvider } from "@/contexts/TitleContext";
@@ -51,15 +50,13 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <AppRouterCacheProvider>
-          <ThemeProvider theme={theme}>
-            <CssBaseline />
-            <TitleProvider>
-              <Navigation />
-              <main>{children}</main>
-            </TitleProvider>
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <ThemeProvider theme={theme}>
+          <CssBaseline />
+          <TitleProvider>
+            <Navigation />
+            <main>{children}</main>
+          </TitleProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

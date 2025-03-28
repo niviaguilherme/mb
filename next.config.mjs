@@ -9,7 +9,11 @@ const nextConfig = {
       "cinema10.com.br",
       "upload.wikimedia.org",
     ],
+    unoptimized: true,
   },
+  output: "standalone",
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default nextConfig;
