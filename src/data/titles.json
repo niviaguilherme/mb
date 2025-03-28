@@ -1,0 +1,164 @@
+{
+  "titles": [
+    {
+      "id": "1",
+      "name": "Stranger Things",
+      "image": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "genre": ["Drama", "Ficção científica", "Terror"],
+      "year": 2016,
+      "rating": 4.8
+    },
+    {
+      "id": "2",
+      "name": "Breaking Bad",
+      "image": "https://image.tmdb.org/t/p/w500/3xnWaLQLE3t3NuBv7kFfYhT0I9l.jpg",
+      "genre": ["Drama", "Crime", "Thriller"],
+      "year": 2008,
+      "rating": 4.9
+    },
+    {
+      "id": "3",
+      "name": "The Last of Us",
+      "image": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+      "genre": ["Drama", "Ação", "Terror"],
+      "year": 2023,
+      "rating": 4.7
+    },
+    {
+      "id": "4",
+      "name": "Game of Thrones",
+      "image": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+      "genre": ["Drama", "Fantasia", "Aventura"],
+      "year": 2011,
+      "rating": 4.6
+    },
+    {
+      "id": "5",
+      "name": "The Office",
+      "image": "https://image.tmdb.org/t/p/w500/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg",
+      "genre": ["Comédia", "Romance"],
+      "year": 2005,
+      "rating": 4.5
+    },
+    {
+      "id": "6",
+      "name": "The Mandalorian",
+      "image": "https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1RzqUWYTw.jpg",
+      "genre": ["Ação", "Aventura", "Ficção científica"],
+      "year": 2019,
+      "rating": 4.7
+    },
+    {
+      "id": "7",
+      "name": "Black Mirror",
+      "image": "https://image.tmdb.org/t/p/w500/7PRddOAI1ENoo6T7ZbN5hB0T6Yb.jpg",
+      "genre": ["Drama", "Ficção científica", "Thriller"],
+      "year": 2011,
+      "rating": 4.4
+    },
+    {
+      "id": "8",
+      "name": "The Crown",
+      "image": "https://image.tmdb.org/t/p/w500/1XDDXPXGiI8g7un8z2VfP4g3Otp.jpg",
+      "genre": ["Drama", "História"],
+      "year": 2016,
+      "rating": 4.3
+    },
+    {
+      "id": "9",
+      "name": "Better Call Saul",
+      "image": "https://image.tmdb.org/t/p/w500/rqeYMLryjcawh2JeRpCVUDXYM5b.jpg",
+      "genre": ["Drama", "Crime", "Thriller"],
+      "year": 2015,
+      "rating": 4.6
+    },
+    {
+      "id": "10",
+      "name": "The Witcher",
+      "image": "https://image.tmdb.org/t/p/w500/cZ0d3rtvXPVvuiX22sP79K3Hmjz.jpg",
+      "genre": ["Ação", "Aventura", "Drama"],
+      "year": 2019,
+      "rating": 4.2
+    },
+    {
+      "id": "11",
+      "name": "House of the Dragon",
+      "image": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
+      "genre": ["Drama", "Fantasia", "Ação"],
+      "year": 2022,
+      "rating": 4.5
+    },
+    {
+      "id": "12",
+      "name": "Wednesday",
+      "image": "https://image.tmdb.org/t/p/w500/9PFonBhy4cQy7Jz20NpMygczOkv.jpg",
+      "genre": ["Comédia", "Crime", "Fantasia"],
+      "year": 2022,
+      "rating": 4.3
+    },
+    {
+      "id": "13",
+      "name": "The Boys",
+      "image": "https://image.tmdb.org/t/p/w500/mY7SeH4HFFxW1hiI6cWuwCRKptN.jpg",
+      "genre": ["Ação", "Comédia", "Crime"],
+      "year": 2019,
+      "rating": 4.4
+    },
+    {
+      "id": "14",
+      "name": "Succession",
+      "image": "https://image.tmdb.org/t/p/w500/7HW6v8QUxU3BH3jxI1Zqe2hWvuP.jpg",
+      "genre": ["Drama"],
+      "year": 2018,
+      "rating": 4.6
+    },
+    {
+      "id": "15",
+      "name": "True Detective",
+      "image": "https://image.tmdb.org/t/p/w500/b8Ht0Kz2gzNbXwqR6nZGQHtk3Hw.jpg",
+      "genre": ["Crime", "Drama", "Mistério"],
+      "year": 2014,
+      "rating": 4.5
+    },
+    {
+      "id": "16",
+      "name": "Fargo",
+      "image": "https://image.tmdb.org/t/p/w500/dFVeKDVJu8Rq9MqCqX9uI3CTvkz.jpg",
+      "genre": ["Crime", "Drama", "Thriller"],
+      "year": 2014,
+      "rating": 4.4
+    },
+    {
+      "id": "17",
+      "name": "The Handmaid's Tale",
+      "image": "https://image.tmdb.org/t/p/w500/9WfcGEHhpWQZZJpqyY08ZUDhRkZ.jpg",
+      "genre": ["Drama", "Ficção científica"],
+      "year": 2017,
+      "rating": 4.3
+    },
+    {
+      "id": "18",
+      "name": "Peaky Blinders",
+      "image": "https://image.tmdb.org/t/p/w500/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg",
+      "genre": ["Crime", "Drama"],
+      "year": 2013,
+      "rating": 4.5
+    },
+    {
+      "id": "19",
+      "name": "The Umbrella Academy",
+      "image": "https://image.tmdb.org/t/p/w500/qhcwrnnCnN8NE1N6XXKHFmveJR9.jpg",
+      "genre": ["Ação", "Aventura", "Comédia"],
+      "year": 2019,
+      "rating": 4.2
+    },
+    {
+      "id": "20",
+      "name": "Money Heist",
+      "image": "https://image.tmdb.org/t/p/w500/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "genre": ["Ação", "Crime", "Drama"],
+      "year": 2017,
+      "rating": 4.4
+    }
+  ]
+}
