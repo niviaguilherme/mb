@@ -2,7 +2,13 @@
 
 const nextConfig = {
   images: {
-    domains: ["image.tmdb.org"],
+    domains: [
+      "image.tmdb.org",
+      "m.media-amazon.com",
+      "www.afpp.eu",
+      "cinema10.com.br",
+      "upload.wikimedia.org",
+    ],
   },
 };
 

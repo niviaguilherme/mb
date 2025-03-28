@@ -41,6 +41,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <title>
+          Catálogo de Streaming - Assista seus filmes e séries favoritos
+        </title>
+        <meta
+          name="description"
+          content="Descubra e acompanhe seus filmes e séries favoritos no nosso catálogo de streaming"
+        />
+      </head>
       <body className={inter.className}>
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

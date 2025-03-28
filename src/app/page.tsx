@@ -2,22 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { useTitleContext } from "@/contexts/TitleContext";
-import {
-  Container,
-  Grid,
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  TextField,
-  Box,
-  IconButton,
-  Tooltip,
-  CircularProgress,
-  Button,
-} from "@mui/material";
-import { Favorite, FavoriteBorder } from "@mui/icons-material";
-import Link from "next/link";
+import { Container, Typography, Box, CircularProgress } from "@mui/material";
+import TitleGrid from "@/components/TitleGrid";
+import SearchBar from "@/components/SearchBar";
 
 export default function Home() {
   const {
@@ -95,6 +82,10 @@ export default function Home() {
     }, 100);
   };
 
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
   const filteredTitles = titles.filter((title) =>
     title.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -107,93 +98,26 @@ export default function Home() {
     );
   }
 
+  // Função que verifica se um título é favorito (para o componente TitleGrid)
+  const checkIsFavorite = (id: string) => {
+    return favoritesState[id] || false;
+  };
+
   return (
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ mb: 4 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           Catálogo de Streaming
         </Typography>
-        <TextField
-          fullWidth
-          variant="outlined"
-          placeholder="Buscar títulos..."
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          sx={{ mb: 2 }}
-        />
+        <SearchBar titles={titles} onSearch={handleSearch} />
       </Box>
 
-      <Grid container spacing={3}>
-        {filteredTitles.map((title) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={title.id}>
-            <Card
-              sx={{
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                transition: "transform 0.2s",
-                "&:hover": {
-                  transform: "scale(1.02)",
-                },
-              }}
-            >
-              <Box sx={{ p: 1, textAlign: "center" }}>
-                <Typography variant="caption">ID: {title.id}</Typography>
-              </Box>
-              <Link
-                href={`/title/${title.id}`}
-                style={{ textDecoration: "none" }}
-              >
-                <CardMedia
-                  component="img"
-                  height="300"
-                  image={title.image}
-                  alt={title.name}
-                  sx={{ objectFit: "cover" }}
-                />
-              </Link>
-              <CardContent sx={{ flexGrow: 1 }}>
-                <Box
-                  sx={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                  }}
-                >
-                  <Typography gutterBottom variant="h6" component="h2">
-                    {title.name}
-                  </Typography>
-                  <Tooltip
-                    title={
-                      isMounted && favoritesState[title.id]
-                        ? "Remover dos favoritos"
-                        : "Adicionar aos favoritos"
-                    }
-                  >
-                    <IconButton
-                      onClick={() => handleFavoriteToggle(title.id)}
-                      color="secondary"
-                    >
-                      {isMounted &&
-                        (favoritesState[title.id] ? (
-                          <Favorite />
-                        ) : (
-                          <FavoriteBorder />
-                        ))}
-                    </IconButton>
-                  </Tooltip>
-                </Box>
-                <Typography variant="body2" color="text.secondary">
-                  {title.genre.join(", ")}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {title.year} • {title.rating}/5
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+      <TitleGrid
+        titles={filteredTitles}
+        isFavorite={checkIsFavorite}
+        onToggleFavorite={handleFavoriteToggle}
+        showRemoveButton={false}
+      />
     </Container>
   );
 }
