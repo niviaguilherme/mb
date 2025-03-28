@@ -16,6 +16,8 @@ interface Title {
   genre: string[];
   year: number;
   rating: number;
+  synopsis: string;
+  cast: string[];
 }
 
 interface TitleContextType {

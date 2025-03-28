@@ -11,13 +11,28 @@ import {
   CardMedia,
   Chip,
   Rating,
+  Divider,
+  Avatar,
+  Paper,
 } from "@mui/material";
+import { Person } from "@mui/icons-material";
+
+interface Title {
+  id: string;
+  name: string;
+  image: string;
+  genre: string[];
+  year: number;
+  rating: number;
+  synopsis: string;
+  cast: string[];
+}
 
 export default function TitleDetails() {
   const { id } = useParams();
   const { titles } = useTitleContext();
 
-  const title = titles.find((t) => t.id === id);
+  const title = titles.find((t) => t.id === id) as Title | undefined;
 
   if (!title) {
     return (
@@ -50,10 +65,13 @@ export default function TitleDetails() {
               {title.year}
             </Typography>
           </Box>
-          <Box sx={{ mb: 2 }}>
+          <Box sx={{ mb: 2, display: "flex", alignItems: "center" }}>
             <Rating value={title.rating} precision={0.1} readOnly />
+            <Typography variant="body1" sx={{ ml: 1 }}>
+              {title.rating}/5
+            </Typography>
           </Box>
-          <Box sx={{ mb: 2 }}>
+          <Box sx={{ mb: 3 }}>
             {title.genre.map((genre) => (
               <Chip
                 key={genre}
@@ -64,6 +82,44 @@ export default function TitleDetails() {
               />
             ))}
           </Box>
+
+          <Divider sx={{ mb: 3 }} />
+
+          <Typography variant="h5" gutterBottom>
+            Sinopse
+          </Typography>
+          <Paper
+            elevation={0}
+            sx={{ p: 2, mb: 3, bgcolor: "background.paper", borderRadius: 2 }}
+          >
+            <Typography variant="body1" paragraph>
+              {title.synopsis}
+            </Typography>
+          </Paper>
+
+          <Typography variant="h5" gutterBottom>
+            Elenco
+          </Typography>
+          <Grid container spacing={2} sx={{ mb: 3 }}>
+            {title.cast.map((actor: string) => (
+              <Grid item xs={12} sm={6} md={4} key={actor}>
+                <Paper
+                  elevation={1}
+                  sx={{
+                    p: 1,
+                    display: "flex",
+                    alignItems: "center",
+                    borderRadius: 2,
+                  }}
+                >
+                  <Avatar sx={{ mr: 2, bgcolor: "primary.main" }}>
+                    <Person />
+                  </Avatar>
+                  <Typography variant="body2">{actor}</Typography>
+                </Paper>
+              </Grid>
+            ))}
+          </Grid>
         </Grid>
       </Grid>
     </Container>
