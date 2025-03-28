@@ -31,6 +31,9 @@ interface TitleContextType {
 
 const TitleContext = createContext<TitleContextType | undefined>(undefined);
 
+// Função auxiliar para verificar se estamos no navegador
+const isBrowser = () => typeof window !== "undefined";
+
 export function TitleProvider({ children }: { children: ReactNode }) {
   const [titles] = useState<Title[]>(titlesData.titles);
   const [favorites, setFavorites] = useState<string[]>([]);
@@ -41,29 +44,35 @@ export function TitleProvider({ children }: { children: ReactNode }) {
     // Marcar que estamos no cliente
     setIsClient(true);
 
-    // Tenta recuperar favoritos do localStorage
-    const storedFavorites = localStorage.getItem("favorites");
-    console.log("Carregando favoritos do localStorage:", storedFavorites);
+    // Tenta recuperar favoritos do localStorage apenas se estivermos no navegador
+    if (isBrowser()) {
+      const storedFavorites = localStorage.getItem("favorites");
+      console.log("Carregando favoritos do localStorage:", storedFavorites);
 
-    if (storedFavorites) {
-      try {
-        const parsedFavorites = JSON.parse(storedFavorites);
-        console.log("Favoritos parseados:", parsedFavorites);
+      if (storedFavorites) {
+        try {
+          const parsedFavorites = JSON.parse(storedFavorites);
+          console.log("Favoritos parseados:", parsedFavorites);
 
-        if (Array.isArray(parsedFavorites)) {
-          setFavorites(parsedFavorites);
+          if (Array.isArray(parsedFavorites)) {
+            setFavorites(parsedFavorites);
+          }
+        } catch (error) {
+          console.error("Erro ao carregar favoritos:", error);
         }
-      } catch (error) {
-        console.error("Erro ao carregar favoritos:", error);
       }
     }
   }, []);
 
   // Persiste os favoritos no localStorage quando mudam (apenas do lado do cliente)
   useEffect(() => {
-    if (isClient) {
+    if (isClient && isBrowser()) {
       console.log("Salvando favoritos no localStorage:", favorites);
-      localStorage.setItem("favorites", JSON.stringify(favorites));
+      try {
+        localStorage.setItem("favorites", JSON.stringify(favorites));
+      } catch (error) {
+        console.error("Erro ao salvar favoritos:", error);
+      }
     }
   }, [favorites, isClient]);
 
@@ -101,10 +110,15 @@ export function TitleProvider({ children }: { children: ReactNode }) {
 
   const debugFavorites = () => {
     console.log("Estado atual dos favoritos:", favorites);
-    console.log(
-      "Favoritos no localStorage:",
-      localStorage.getItem("favorites")
-    );
+
+    if (isBrowser()) {
+      console.log(
+        "Favoritos no localStorage:",
+        localStorage.getItem("favorites")
+      );
+    } else {
+      console.log("Executando no servidor, localStorage não disponível");
+    }
 
     // Verifica se os títulos favoritos existem na lista de títulos
     const favoriteTitles = titles.filter((title) =>
