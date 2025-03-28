@@ -30,7 +30,7 @@ export default function Navigation() {
             color: "inherit",
           }}
         >
-          Catálogo de Streaming
+          Catálogo de Streaming1
         </Typography>
         <Box>
           <Tooltip title="Favoritos">
